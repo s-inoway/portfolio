@@ -1,0 +1,207 @@
+<header>
+  <h1 class="logo">
+    <div class="logo-main">Inoue Sota</div>
+    <div class="logo-sub">portfolio</div>
+  </h1>
+  <div class="menubar">
+    <ul class="nav">
+      <li class="nav-item"><%= link_to 'Profile', root_path(anchor: 'profile')%></li>
+      <li class="nav-item"><%= link_to 'Skill', root_path(anchor: 'skill')%></li>
+      <li class="nav-item"><%= link_to 'Product', root_path(anchor: 'product')%></li>
+      <li class="nav-item"><%= link_to 'Contact', root_path(anchor: 'contact')%></li>
+    </ul>
+  </div>
+  <div class="menubar-margin"></div>
+</header>
+<%# ここまでヘッダーとメニューバー %>
+
+<h2 class="section" id="profile">
+  <div class="section-title">
+    <div class="title-sub">自己紹介</div>
+    <div class="title-main">Profile</div>
+  </div>
+  <div class="profile-main">
+  <%= image_tag 'prof.jpg', width: '300px', class: 'prof-img' %>
+  <ul class="profile">
+    <li class="profile-item">名前：井上 創太 （いのうえ そうた）</li>
+    <li class="profile-item">年齢：25歳</li>
+    <li class="profile-item">出身：愛知県名古屋市（現在も在住）</li>
+    <li class="profile-item">学歴：名古屋市立名東高校 卒業・私立名城大学 薬学部 中退</li>
+    <li class="profile-item">職歴：(株)石橋楽器店にて2年間、音楽教室受付のアルバイト。<br>その後HAUZEX(株)にて2年間、施工管理業務に携わりました。</li>
+    <li class="profile-item">
+      ひとこと：細かい作業を繰り返して、作り上げたものをたくさんの人に
+      <br>見てもらえるのが何より嬉しいと感じます！Web系の業界は初めてで
+      <br>知識も経験もないですが、前職で学んだコミュニケーションスキルや、
+      <br>プログラミングスクールで学んだ技術を存分に活かせたらと思います。
+    </li>
+    <li class="profile-item">その他：趣味は音楽。休日は吹奏楽団の団長をしています。</li>
+  </ul>
+  </div>
+</h2>
+
+<h2 class="section" id="skill">
+  <div class="section-title">
+    <div class="title-sub">技術・能力</div>
+    <div class="title-main">Skill</div>
+  </div>
+  <div class="skill-main">
+    <table class="skill-table">
+        <tr>
+          <th>言語・ソフトなど</th> <th>経験年数</th> <th>レベル</th> <th>コメント</th>
+        </tr>
+        <tr>
+          <td>HTML</td> <td>半年</td> <td class="skill-level">2<%=image_tag '2stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            なるべく見やすいコードの書き方を意識しながら書いています。
+          </td>
+        </tr>
+        <tr>
+          <td>CSS</td> <td>半年</td> <td class="skill-level">2<%=image_tag '2stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            まだまだリファレンスを確認しながら記述することが多いです。
+          </td>
+        </tr>
+        <tr>
+          <td>Illustrator</td> <td>1年</td> <td class="skill-level">2.5<%=image_tag '2.5stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            楽器店のアルバイト時に、音楽教室のチラシを作成していました。上司と相談しながらではありますが、
+            1から企画・レイアウト・校正など行っておりました。現在はソフトを所持していないため、使うことができません。
+          </td>
+        </tr>
+        <tr>
+          <td>Photoshop</td> <td>1年</td> <td class="skill-level">2<%=image_tag '2stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            Illustratorと同じく音楽教室のチラシ作成に使用していました。
+            色味調整や、切り抜きなど、基本的なことなら扱えます。現在ソフトは所持していません。
+          </td>
+        </tr>
+        <tr>
+          <td>Javascript</td> <td>半年</td> <td class="skill-level">1<%=image_tag '1star.png', class: 'star-img'%></td>
+          <td class="comment">
+            記述の仕方がまだ慣れませんが、できることの多さから一番魅力のある言語だと思っています。
+            触れるチャンスがあれば、仕事として扱ってみたいです。
+            AJAXやjsonについてはまだ導入したばかりで詳しく理解できていません。
+          </td>
+        </tr>
+        <tr>
+          <td>Ruby</td> <td>半年</td> <td class="skill-level">3<%=image_tag '3stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            プログラミングスクールで重点的に取り扱っていた言語の一つです。
+            Rubyを通して、プログラミング言語の基礎や、オブジェクト指向の考え方を身に付けました。
+            PaizaのスキルチェックではCランクです。
+          </td>
+        </tr>
+        <tr>
+          <td>Ruby on Rails</td> <td>1年</td> <td class="skill-level">2.5<%=image_tag '2.5stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            Webアプリケーションを作成する際のフレームワークとして使っています。
+          </td>
+        </tr>
+        <tr>
+          <td>MySQL</td> <td>半年</td> <td class="skill-level">2<%=image_tag '2stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            DBとして初めて使用したサービスです。
+          </td>
+        </tr>
+        <tr>
+          <td>Github</td> <td>半年</td> <td class="skill-level">2<%=image_tag '2stars.png', class: 'star-img'%></td>
+          <td class="comment">
+            実際に共同開発で使ったことはないため、どんどん慣れていきたいと思っております。
+          </td>
+        </tr>
+    </table>
+  </div>
+</h2>
+
+<h2 class="section" id="product">
+  <div class="section-title">
+    <div class="title-sub">作ったもの</div>
+    <div class="title-main">Product</div>
+  </div>
+  <div class="product-main">
+    <div class="product-card">
+      <%= link_to root_path() do %>
+        <%= image_tag 'portfolio.png', class: 'product-img' %>
+        <div class="product-title">ポートフォリオ(本ページ)</div>
+      <% end %>
+      <div class="product-comment">自分自身のポートフォリオです。</div>
+      <div class="product-skill">使用したもの: HTML / CSS / javascript</div>
+      <%= link_to 'トップページ', root_path(), class: 'product-link' %>
+      <%= link_to 'git-hub', 'https://github.com/s-inoway/portfolio/', class: 'product-link', target: :_blank, rel: "noopener noreferrer" %>
+    </div>
+    <div class="product-card">
+      <%= link_to 'https://furima-28637.herokuapp.com/', target: :_blank, rel: "noopener noreferrer" do %>
+        <%= image_tag 'furima-28637.png', class: 'product-img' %>
+        <div class="product-title">フリマアプリ(スクール最終課題)</div>
+      <% end %>
+      <div class="product-comment">
+        TECH-CAMPで作成したフリマアプリです。ユーザー登録、商品の出品・編集・削除、詳細表示・購入などできるようになっております。
+        <span>※herokuサーバーの都合上、写真のリンクが切れている恐れがあります。</span>
+      </div>
+      <div class="product-skill">使用したもの: HTML / CSS / Javascript / Ruby / Ruby on Rails / MySQL / Github</div>
+      <%= link_to 'トップページ', 'https://furima-28637.herokuapp.com/', class: 'product-link', target: :_blank, rel: "noopener noreferrer" %>
+      <%= link_to 'git-hub', 'https://github.com/s-inoway/furima-28637', class: 'product-link', target: :_blank, rel: "noopener noreferrer" %>
+    </div>
+    <div class="product-card">
+      <%= link_to 'https://event-reserve.herokuapp.com/', target: :_blank, rel: "noopener noreferrer" do %>
+        <%= image_tag 'event-reserve.png', class: 'product-img' %>
+        <div class="product-title">イベント予約システム(未完成)</div>
+      <% end %>
+      <div class="product-comment">
+        イベントの開催・参加予約・参加費支払いができるようなアプリを作成中です。
+      </div>
+      <div class="product-skill">使用したもの: HTML / CSS / Javascript / Ruby / Ruby on Rails / MySQL / Github</div>
+      <%= link_to 'トップページ', 'https://event-reserve.herokuapp.com/', class: 'product-link', target: :_blank, rel: "noopener noreferrer" %>
+      <%= link_to 'git-hub', 'https://github.com/s-inoway/event-reserve', class: 'product-link', target: :_blank, rel: "noopener noreferrer" %>
+    </div>
+    <div class="product-card" id='irrust'>
+      <%= link_to irrust_path() do %>
+        <%= image_tag 'taiken-1omote.jpg', class: 'product-img' %>
+        <div class="product-title">体験レッスンチラシ</div>
+      <% end %>
+      <div class="product-comment">
+        音楽教室受付のアルバイト時代に作成しました。他にも多数あります。
+      </div>
+      <div class="product-skill">使用したもの: Illustrator / Photoshop</div>
+      <%= link_to '他のチラシをみる', irrust_path(), class: 'product-link' %>
+    </div>
+  </div>
+</h2>
+
+<h2 class="section" id="contact">
+  <div class="section-title">
+    <div class="title-sub">お問い合わせ</div>
+    <div class="title-main">Contact</div>
+  </div>
+  <div class="contact-main">
+    <div class="contact-comment">
+      何かありましたら、メールまたはTwitterのDMにてご連絡ください。
+    </div>
+    <div class="contact-type">
+      <%= mail_to 's.inoway.0804.kitchey@gmail.com', class: 'contact-card' do %>
+        <%= image_tag 'mail.png', class: 'contact-img' %>
+        <div class="contact-name">Email</div>
+      <% end %>
+
+      <%= link_to 'https://twitter.com/s_inoway', class: 'contact-card', target: :_blank, rel: "noopener noreferrer" do %>
+        <%= image_tag 'Twitter-logo.png', class: 'contact-img' %>
+        <div class="contact-name">Twitter</div>
+      <% end %>
+
+      <%= link_to 'https://github.com/s-inoway', class: 'contact-card', target: :_blank, rel: "noopener noreferrer" do %>
+        <%= image_tag 'github-logo.png', class: 'contact-img' %>
+        <div class="contact-name">Github</div>
+      <% end %>
+    </div>
+  </div>
+</h2>
+
+<footer>
+  <ul class="footer-nav">
+    <li class="footer-nav-item"><%= link_to 'Profile', root_path(anchor: 'profile')%></li>
+    <li class="footer-nav-item"><%= link_to 'Skill', root_path(anchor: 'skill')%></li>
+    <li class="footer-nav-item"><%= link_to 'Product', root_path(anchor: 'product')%></li>
+    <li class="footer-nav-item"><%= link_to 'Contact', root_path(anchor: 'contact')%></li>
+　</ul>
+<div class="copyright">Copyright © Sota Inoue. All Rights Reserved.</div>
+</footer>

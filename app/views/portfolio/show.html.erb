@@ -1,0 +1,56 @@
+<header>
+
+  <div class="menubar">
+    <ul class="nav">
+      <li class="nav-item"><%= link_to 'Profile', root_path(anchor: 'profile')%></li>
+      <li class="nav-item"><%= link_to 'Skill', root_path(anchor: 'skill')%></li>
+      <li class="nav-item"><%= link_to 'Product', root_path(anchor: 'product')%></li>
+      <li class="nav-item"><%= link_to 'Contact', root_path(anchor: 'contact')%></li>
+    </ul>
+  </div>
+  <div class="menubar-margin"></div>
+</header>
+<h2 class="section" id="irrust">
+  <div class="section-title">
+    <div class="title-sub">チラシ</div>
+    <div class="title-main">Irrust</div>
+  </div>
+  <div>
+  <div class="irrust-main">
+    <div class="irrust-card">
+      <%= image_tag 'taiken-1omote.jpg', class: 'irrust-img' %>
+      <div class="irrust-title">体験受付チラシ1(オモテ)</div>
+    </div>
+    <div class="irrust-card">
+      <%= image_tag 'taiken-1ura.jpeg', class: 'irrust-img' %>
+      <div class="irrust-title">体験受付チラシ1(ウラ)</div>
+    </div>    
+    <div class="irrust-card">
+      <%= image_tag 'taiken-2omote.jpeg', class: 'irrust-img' %>
+      <div class="irrust-title">体験受付チラシ2(オモテ)</div>
+    </div>
+    <div class="irrust-card">
+      <%= image_tag 'taiken-2ura.jpeg', class: 'irrust-img' %>
+      <div class="irrust-title">体験受付チラシ2(ウラ)</div>
+    </div>
+    <div class="irrust-card">
+      <%= image_tag 'LMLive.jpg', class: 'irrust-img' %>
+      <div class="irrust-title">バンド系発表会チラシ</div>
+    </div>
+    <div class="irrust-card">
+      <%= image_tag 'Specialseminor.jpeg', class: 'irrust-img' %>
+      <div class="irrust-title">ドラムセミナーチラシ</div>
+    </div>
+  </div>
+  <%= link_to '戻る', root_path(anchor: 'irrust'), class: 'return' %>
+</h2>
+
+<footer>
+  <ul class="footer-nav">
+    <li class="footer-nav-item"><%= link_to 'Profile', root_path(anchor: 'profile')%></li>
+    <li class="footer-nav-item"><%= link_to 'Skill', root_path(anchor: 'skill')%></li>
+    <li class="footer-nav-item"><%= link_to 'Product', root_path(anchor: 'product')%></li>
+    <li class="footer-nav-item"><%= link_to 'Contact', root_path(anchor: 'contact')%></li>
+　</ul>
+<div class="copyright">Copyright © Sota Inoue. All Rights Reserved.</div>
+</footer>
