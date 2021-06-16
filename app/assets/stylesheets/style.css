@@ -19,7 +19,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: image-url('header.jpeg');
+  background-image: url(header.jpeg);
   background-size: cover;
 }
 
