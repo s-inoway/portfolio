@@ -23,6 +23,12 @@ header {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    background-image: url(header2.jpeg);
+  }
+}
+
 .logo-main {
   font-size: 8vw;
   margin-left: 5vw;
