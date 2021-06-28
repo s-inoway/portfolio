@@ -229,6 +229,12 @@ th, td {
   font-size: 10px;
 }
 
+.product-password {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .product-skill {
   font-size: 12px;
   margin: 0px 10px 20px;
