@@ -122,18 +122,22 @@ header {
 
 .profile-main {
   line-height: 30px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .profile {
   list-style: disc;
   padding-left: 40px;
+  width: 55%;
 }
 
 .prof-img {
   margin-right: 30px;
+  height: auto;
+  width: 25%;
 }
 
 .profile-item {
